@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Çim Biçme Hizmeti - Ankara</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    h2 {
+      font-weight: 700;
+    }
+
+    .card-title {
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="bg-light sticky-top shadow-sm">
+    <nav class="navbar navbar-expand-lg bg-light navbar-light container">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold text-success fs-3" href="#">
+          Ankara <img src="images/loga1.png" class="logo me-2"> Çim Biçme
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" style="border-color: #28a745;"
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Menüyü Aç">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link btn btn-outline-success rounded-pill me-2" href="#neden-biz">Neden Biz?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-outline-success rounded-pill me-2" href="#hizmetler">Hizmetlerimiz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-outline-success rounded-pill me-2" href="#bolgeler">Bölgeler</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-outline-success rounded-pill me-2" href="#harita">Harita</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-outline-success rounded-pill me-2" href="#hakkımızda">Hakkımızda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-success rounded-pill" href="#iletisim">İletişim</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section id="header" class="py-5" style="background: linear-gradient(to right, #e6f9f0, #d4f5e7);">
+    <div class="container py-5">
+      <div class="row align-items-center">
+
+        <!-- Yazı Kısmı -->
+        <div class="col-md-6 text-center text-md-start animate__animated animate__fadeInLeft">
+          <h1 class="fw-bold mb-3 text-success text-center">🌿 Bahçeniz Bizimle Nefes Alsın!</h1>
+          <p class="lead mb-4 text-dark text-center">Çimler kısa, kalite uzun! Profesyonel peyzaj ve çim biçme
+            hizmetleriyle doğayı evinize getiriyoruz.</p>
+          <div class="d-flex justify-content-center mb-3">
+            <a href="tel:+905435498706" class="btn btn-success btn-lg rounded-pill shadow-lg me-3">
+              <i class="bi bi-telephone-fill fs-4 me-2 mt-3"></i> Şimdi Ara!
+            </a>
+            <a href="https://wa.me/905435498706?text=Merhaba%2C%20%C3%A7im%20bi%C3%A7me%20hizmetinizle%20ilgileniyorum.%20Hemen%20ileti%C5%9Fime%20ge%C3%A7ebilir%20misiniz%3F"
+              target="_blank" class="btn btn-outline-success btn-lg rounded-pill">
+              <i class="bi bi-whatsapp fs-4 me-2"></i> WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Görsel Kısmı -->
+        <div class="col-md-6 text-center animate__animated animate__fadeInRight">
+          <img src="images/cimbicme.png" alt="Yeşil Bahçe" class="img-fluid rounded-4 shadow"
+            style="max-height: 400px; animation-delay: 0.5s;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Neden Biz -->
+  <section id="neden-biz" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Neden Bizi Seçmelisiniz?</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body text-center">
+              <h5 class="card-title text-success"><i class="bi bi-check-circle-fill me-2"></i> Profesyonel Ekip</h5>
+              <p class="card-text">Alanında uzman ve deneyimli ekibimizle kaliteli hizmet sunuyoruz.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body text-center">
+              <h5 class="card-title text-success"><i class="bi bi-lightning-fill me-2"></i> Hızlı ve Etkili</h5>
+              <p class="card-text">İhtiyacınıza en kısa sürede cevap veriyor, çimlerinizi hızla biçiyoruz.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body text-center">
+              <h5 class="card-title text-success"><i class="bi bi-tools me-2"></i> Modern Ekipman</h5>
+              <p class="card-text">Son teknoloji ürünü ekipmanlarımızla kusursuz biçim sağlıyoruz.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hizmetler -->
+  <section id="hizmetler" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Hizmetlerimiz</h2>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="images/cimBicmek.png" alt="Çim Biçme" class="card-img-top"
+              style="height: 200px;  object-fit: contain;">
+            <div class="card-body text-center">
+              <h3 class="card-title text-success">Çim Biçme</h3>
+              <p class="card-text">Çimleri en uygun uzunlukta ve düzgün biçimde kesiyoruz.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="images/bahceDüzenleme.png" alt="Bahçe Düzenleme" class="card-img-top"
+              style="height: 200px; object-fit: contain;">
+            <div class="card-body text-center">
+              <h3 class="card-title text-success">Bahçe Düzenleme</h3>
+              <p class="card-text">Bitki bakımı ve peyzaj ile bahçenize estetik kazandırıyoruz.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Çalışmalardan Örnekler -->
+  <section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Çalışmalarımızdan Örnekler</h2>
+        <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
+            <div class="col">
+                <div class="overflow-hidden border rounded">
+                    <img src="images/hizmetResim.png" alt="Çim Biçme Öncesi" class="img-fluid w-100" style="height: 250px; object-fit: contain;">
+                </div>
+            </div>
+            <div class="col">
+                <div class="overflow-hidden border rounded">
+                    <img src="images/hizmetResim2.jpg" alt="Çim Biçme Sonrası" class="img-fluid w-100" style="height: 250px; object-fit: contain;">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  <!-- Bölgeler -->
+  <section class="py-5" id="bolgeler">
+    <div class="container">
+      <h2 class="text-center mb-4">Hizmet Verdiğimiz Bölgeler</h2>
+      <ul class="list-unstyled d-flex flex-wrap justify-content-center gap-3">
+        <li class="badge bg-success text-white rounded-pill py-3 px-4">Altındağ</li>
+        <li class="badge bg-success text-white rounded-pill py-3 px-4">Karapürçek</li>
+        <li class="badge bg-success text-white rounded-pill py-3 px-4">Hüseyin Gazi Çevreleri</li>
+        <li class="badge bg-success text-white rounded-pill py-3 px-4">Aydınlık Evler</li>
+        <li class="badge bg-success text-white rounded-pill py-3 px-4">Keçiören</li>
+        <li class="badge bg-success text-white rounded-pill py-3 px-4">Pursaklar</li>
+        <li class="badge bg-success text-white rounded-pill py-3 px-4">Yenimahalle</li>
+        <li class="badge bg-success text-white rounded-pill py-3 px-4">Mamak</li>
+        <li class="badge bg-success text-white rounded-pill py-3 px-4">Etimesgut</li>
+        <li class="badge bg-success text-white rounded-pill py-3 px-4">Sincan</li>
+        <li class="badge bg-success text-white rounded-pill py-3 px-4">Eryaman</li>
+        <li class="badge bg-success text-white rounded-pill py-3 px-4">Çankaya</li>
+        <li class="badge bg-success text-white rounded-pill py-3 px-4">Batıkent</li>
+        <li class="badge bg-success text-white rounded-pill py-3 px-4">Ümitköy</li>
+        <li class="badge bg-success text-white rounded-pill py-3 px-4">Çayyolu</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Harita -->
+  <section class="py-5" id="harita">
+    <div class="container">
+      <h2 class="text-center mb-4">Harita Üzerinden İnceleyin</h2>
+      <div id="map" style="height: 400px;"></div>
+      <p class="text-center mt-3"><small class="text-muted">Haritada işaretli bölgelerde hizmet vermekteyiz.</small></p>
+    </div>
+  </section>
+
+  <!-- Hakkımızda -->
+  <section class="py-5 bg-light" id="hakkımızda">
+    <div class="container">
+      <h2 class="text-center mb-4">Hakkımızda</h2>
+      <p class="lead text-center">Biz sadece çim biçmekle kalmıyoruz, bahçenizin güzel ve bakımlı kalması için
+        çalışıyoruz. Modern araçlarımız ve güler yüzlü ekibimizle, kısa sürede istediğiniz sonucu almanızı sağlıyoruz.
+        Müşteri memnuniyeti bizim için her zaman en önemli konudur. Bahçenize değer katmak ve sizi mutlu etmek için
+        buradayız.</p>
+    </div>
+  </section>
+
+  <!-- İletişim -->
+  <section id="iletisim" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Hemen İletişime Geçin!</h2>
+      <div class="d-grid gap-2 d-md-flex justify-content-center">
+        <a href="tel:+905435498706" class="btn btn-warning btn-lg me-md-2">📞 Bizi Arayın</a>
+        <a href="https://wa.me/905435498706?text=Merhaba%2C%20%C3%A7im%20bi%C3%A7me%20hizmetinizle%20ilgileniyorum.%20Hemen%20ileti%C5%9Fime%20ge%C3%A7ebilir%20misiniz%3F"
+          target="_blank" class="btn btn-success btn-lg"><i class="bi bi-whatsapp fs-4 me-2"></i> WhatsApp'tan
+          Ulaşın</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h5>Adres</h5>
+          <p>Altındağ<br>Ankara, Türkiye</p>
+        </div>
+        <div class="col-md-3">
+          <h5>İletişim</h5>
+          <p>Telefon: <a href="tel:+905435498706" class="text-white">+90 543 549 87 06</a>
+        </div>
+        <div class="col-md-3">
+          <h5>Sosyal Medya</h5>
+          <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+        </div>
+        <div class="col-md-3 mt-3">
+          <img src="images/logo.png" class="img-fluid" style="height: 150px; width: auto;">
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <small>&copy; 2025 Çim Biçme Hizmeti - Ankara. Tüm hakları saklıdır.</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

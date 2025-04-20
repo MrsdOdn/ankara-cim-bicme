@@ -1,0 +1,47 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa; /* Daha modern bir arka plan rengi */
+    color: #343a40; /* Daha okunabilir bir metin rengi */
+    line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #28a745; /* Başlıklar için tema rengi */
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='%2328a745' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.logo {
+    height: 60px; /* İstediğiniz yükseklik */
+    width: auto; /* Genişlik otomatik ayarlanır */
+    overflow: hidden; /* Köşelerin taşmasını engeller (gerekirse) */
+    border-radius: 50%;
+}
+/* Ekstra CSS */
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  #header {
+    background: linear-gradient(-45deg, #e6f9f0, #d4f5e7, #c1f0dc, #b0e6d1);
+    background-size: 400% 400%;
+    animation: gradientShift 10s ease infinite;
+  }
+  
+  .btn-success:hover {
+    transform: scale(1.05);
+    background-color: #28a745 !important;
+  }
+  
+  .btn-outline-success:hover {
+    background-color: #28a745;
+    color: white !important;
+    transform: scale(1.05);
+  }
+
+  img:hover {
+    transform: scale(1.03);
+    transition: transform 0.4s ease-in-out;
+  }
